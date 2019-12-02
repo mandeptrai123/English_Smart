@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThanhTich.Rank_Profile">
+    <ImageView
+        android:id="@+id/pro_rank_img"
+        android:background="@drawable/logo_iuh"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+    <TextView
+        android:id="@+id/pro_rank_name"
+        android:text="Huỳnh Trọng Mẫn"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/pro_rank_img"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Đại Học Công Nghiệp Thành Phố HCM"
+        android:layout_toRightOf="@id/pro_rank_img"
+        android:layout_below="@id/pro_rank_name"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/pro_rank_score"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="#000000"
+        android:text="Score: 1560"
+        android:layout_below="@id/pro_rank_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/pro_rank_khoa"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Sinh Viên Năm 1"
+        android:layout_below="@id/pro_rank_score"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_below="@+id/pro_rank_khoa"
+        android:id="@+id/pro_rank_nganh"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Ngành Công Nghệ Thông Tin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_below="@id/pro_rank_nganh"
+        android:id="@+id/pro_rank_note"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="Quang Trọng Là Thần Thái."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

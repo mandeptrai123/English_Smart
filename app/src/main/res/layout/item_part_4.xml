@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_rect"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
+        app:lottie_fileName="correct.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lottie_correct_part4_1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
+        app:lottie_fileName="erro.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lottie_wrong_part4_1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+<TextView
+    android:id="@+id/question1_part4"
+    android:layout_below="@+id/lottie_correct_part4_1"
+    android:padding="5dp"
+    android:text="Who does she ……… to take care of her?"
+    android:textSize="22dp"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:layout_margin="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
+        app:lottie_fileName="erro.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lottie_wrong_part4_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/question1_part4"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
+        android:layout_below="@id/question1_part4"
+        app:lottie_fileName="correct.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lottie_correct_part4_2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/question2_part4"
+        android:layout_below="@+id/lottie_correct_part4_2"
+        android:padding="5dp"
+        android:text="Who does she ……… to take care of her?"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
+        app:lottie_fileName="erro.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lottie_wrong_part4_3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/question2_part4"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="invisible"
+        android:layout_below="@id/question2_part4"
+        app:lottie_fileName="correct.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/lottie_correct_part4_3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/question3_part4"
+        android:layout_below="@+id/lottie_correct_part4_3"
+        android:padding="5dp"
+        android:text="Who does she ……… to take care of her?"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

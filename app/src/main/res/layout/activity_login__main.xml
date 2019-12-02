@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Login.Login_Main">
+    <ImageView
+       android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo_kenko"
+        android:src="@drawable/logo_kenko_i"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/white"
+        android:id="@+id/progressbar_login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo_kenko"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:text="Sign In"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:textColor="#ffffff"
+        android:layout_above="@id/edit_login_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+<EditText
+    android:padding="9dp"
+    android:hint="user"
+    android:background="@drawable/bg_edit"
+    android:layout_below="@id/progressbar_login"
+    android:layout_margin="4dp"
+    android:id="@+id/edit_login_user"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" />
+    <EditText
+        android:padding="9dp"
+        android:hint="password"
+        android:background="@drawable/bg_edit"
+        android:layout_below="@id/edit_login_user"
+        android:id="@+id/edit_login_pass"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:background="@drawable/button9"
+        android:textColor="#000000"
+        android:onClick="sign_in"
+        android:id="@+id/but_login_main"
+        android:text="Login"
+        android:layout_margin="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_login_pass"
+        android:layout_width="140dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/text_register"
+        android:onClick="sign_up"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:textColor="#ffffff"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/but_login_main"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <com.facebook.login.widget.LoginButton
+        android:layout_below="@id/text_register"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="60dp" />
+</RelativeLayout>

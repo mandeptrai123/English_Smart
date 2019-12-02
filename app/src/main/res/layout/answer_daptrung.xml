@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ec.dina.btefonts.ButtonFonts
+    android:visibility="invisible"
+    android:id="@+id/item_but_answer_daptrung"
+    android:layout_margin="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="55dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_ani_question_dt"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="question_icon.json"
+        android:layout_centerInParent="true"
+        android:layout_width="65dp"
+        android:layout_height="55dp" />
+</RelativeLayout>

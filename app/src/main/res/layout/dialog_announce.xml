@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/button"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:textStyle="bold"
+        android:text="Hello Thành Viên Mới"
+        android:textSize="16dp"
+        android:textColor="#9933CC"
+        android:id="@+id/id_hello"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/icon_hello" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#9933CC"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="Bạn Muốn Xem Hướng Dẫn Không?"
+        android:background="@drawable/button8"
+        android:layout_below="@id/id_hello"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

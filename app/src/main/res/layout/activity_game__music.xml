@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_rect"
+    tools:context=".trangchu.game_choose.Game_Music">
+    -<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent" android:id="@+id/relative_music">
+<TextView
+    android:id="@+id/score_music"
+    android:textSize="35dp"
+    android:text="Start"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp"
+    android:layout_width="160dp"
+    android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/bg_music"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="5dp"
+        android:layout_height="5dp" />
+    <Button
+
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/but1_music"
+        android:layout_margin="5dp"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+
+/>
+
+
+    <Button
+
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/but2_music"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_width="220dp"
+        android:layout_height="60dp" />
+
+
+    <Button
+
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/but3_music"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@id/but4_music"
+        android:layout_width="220dp"
+        android:layout_height="60dp"/>
+
+    <Button
+
+        android:textColor="#ffffff"
+        android:id="@+id/but4_music"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="220dp"
+        android:layout_height="60dp"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:id="@+id/button_music_start"
+        app:lottie_fileName="violin.json"
+        app:lottie_loop="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+</RelativeLayout>
+</RelativeLayout>

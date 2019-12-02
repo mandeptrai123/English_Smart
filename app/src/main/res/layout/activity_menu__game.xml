@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".trangchu.game_choose.Menu_Game">
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="segoe_print"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="ScoreBoard"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/rank_game"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:onClick="bxh_game"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@id/rank_game"
+        app:lottie_loop="true"
+        android:layout_margin="5dp"
+       app:lottie_autoPlay="true"
+        app:lottie_fileName="egg.json"
+        android:onClick="onClick1"
+        android:id="@+id/img_choose_game_1"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+      />
+    <ec.dina.btefonts.TextViewFonts
+        android:text="Đập Trứng"
+        app:dm_font="segoe_print"
+        android:layout_below="@id/rank_game"
+        android:layout_margin="5dp"
+        android:onClick="onClick1"
+        android:textColor="#990000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:id="@+id/text_choose_game_1"
+        android:layout_toRightOf="@id/img_choose_game_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_margin="5dp"
+        app:lottie_loop="true"
+        app:lottie_fileName="music_icon.json"
+        app:lottie_autoPlay="true"
+        android:onClick="onClick2"
+        android:layout_below="@id/img_choose_game_1"
+        android:id="@+id/img_choose_game_2"
+        android:layout_width="120dp"
+        android:layout_height="100dp" />
+    <ec.dina.btefonts.TextViewFonts
+        android:text="Đoán Nhạc"
+        app:dm_font="segoe_print"
+        android:layout_margin="5dp"
+        android:onClick="onClick2"
+        android:textColor="#FF6600"
+        android:textStyle="bold"
+        android:gravity="center"
+         android:textSize="22dp"
+        android:id="@+id/text_choose_game_2"
+        android:layout_below="@id/img_choose_game_1"
+        android:layout_toRightOf="@id/img_choose_game_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="5dp"
+        android:onClick="onClick3"
+        android:layout_below="@id/img_choose_game_2"
+        android:id="@+id/img_choose_game_3"
+        android:layout_width="120dp"
+        android:layout_height="100dp" />
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="segoe_print"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:onClick="onClick3"
+        android:textColor="#00CC00"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:id="@+id/text_choose_game_3"
+        android:layout_below="@id/img_choose_game_2"
+        android:layout_toRightOf="@id/img_choose_game_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+
+
+<TextView
+    android:layout_marginRight="17dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/mystar_game"
+    android:gravity="center"
+    android:text="My Star : 0"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:textSize="18dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</RelativeLayout>

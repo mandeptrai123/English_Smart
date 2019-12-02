@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Profile.USER_UPDATE">
+ <de.hdodenhof.circleimageview.CircleImageView
+     android:layout_centerHorizontal="true"
+     android:id="@+id/update_pro_img"
+     android:src="@drawable/icon_user"
+     android:layout_margin="5dp"
+     android:layout_width="130dp"
+     android:layout_height="130dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loading_update_photo"
+        app:lottie_loop="true"
+        app:lottie_fileName="answer.json"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/blue"
+        android:layout_margin="5dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+
+   <ec.dina.btefonts.TextViewFonts
+       app:dm_font="big_Pixel"
+       android:id="@+id/take_photo_update"
+       android:layout_width="130dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/update_pro_img"
+       android:layout_centerHorizontal="true"
+       android:gravity="center"
+      android:onClick="take_photo"
+       android:text="Choose"
+       android:textColor="#000000"
+       android:textSize="25dp"
+       android:textStyle="bold" />
+
+    <ec.dina.btefonts.EditTextFonts
+        android:background="@drawable/button9"
+        android:layout_below="@id/take_photo_update"
+        android:id="@+id/your_name"
+        android:gravity="center"
+        android:textColor="#339999"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text=""
+        android:textColorHint="#339999"
+        android:hint="Nick Name"
+        android:layout_marginTop="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ec.dina.btefonts.TextViewFonts
+        android:text="School"
+        app:dm_font="aleida"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#339999"
+        android:background="@drawable/button9"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_get_school_update"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+       android:layout_below="@id/your_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </ec.dina.btefonts.TextViewFonts>
+
+    <ec.dina.btefonts.TextViewFonts
+        android:text="Majors"
+        app:dm_font="aleida"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#339999"
+        android:background="@drawable/button9"
+        android:id="@+id/text_get_majors_update"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/text_get_school_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </ec.dina.btefonts.TextViewFonts>
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_colorFilter="#339999"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="button_save.json"
+        android:onClick="update_profile"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="150dp"
+        android:layout_height="60dp" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="teamkenko.english_smart">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Login.Login_Main"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" /> <activity android:name="com.facebook.CustomTabActivity" android:exported="true"> <intent-filter> <action android:name="android.intent.action.VIEW" /> <category android:name="android.intent.category.DEFAULT" /> <category android:name="android.intent.category.BROWSABLE" /> <data android:scheme="@string/fb_login_protocol_scheme" /> </intent-filter> </activity>
+
+        <activity android:name=".Vocabulary.Calendar_day" />
+        <activity android:name=".Learn.Menu_learn" />
+        <activity android:name=".GiaoTiep.Voice" />
+        <activity android:name=".GiaoTiep.Menu_GiaoTiep" />
+        <activity android:name=".GiaoTiep.Hospital" />
+        <activity android:name=".game_choose.menu_game.Menu_Game" />
+        <activity android:name=".game_choose.game_xep_Xe.Game_xepxe" />
+        <activity android:name=".game_choose.game_music.Game_Music" />
+        <activity android:name=".game_choose.game_dap_trung.Game_DapTrung" />
+        <activity android:name=".game_choose.game_bat_chu.Game_batchu" />
+        <activity android:name=".ThanhTich.Rank_Profile" />
+        <activity android:name=".Listening_Contest.Listen_Online" />
+        <activity android:name=".Word_Contest.Word_online" />
+        <activity android:name=".Profile.User_detail" />
+        <activity android:name=".Vocabulary.Voca_Speaking" />
+        <activity android:name=".game_choose.menu_game.Rank_Game" />
+        <activity android:name=".menu.Menu_English" />
+        <activity android:name=".Word_Contest.List_Word" />
+        <activity android:name=".Profile.USER_UPDATE" />
+        <activity android:name=".Training.Training_OverView" />
+        <activity android:name=".TOEIC.Reading_Toeic" />
+        <activity android:name=".TOEIC.part_2.Part_2" />
+        <activity android:name=".TOEIC.part_1.Part_1" />
+        <activity android:name=".TOEIC.Menu_Toeic.Main_Toeic" />
+        <activity android:name=".Loading.Loading" />
+        <activity android:name=".Login.Register_Main" />
+        <activity android:name=".Solo_Words.TranDau" />
+        <activity android:name=".TOEIC.Menu_Toeic.Toeic_Full" />
+        <activity android:name=".TOEIC.part_3.Part_3" />
+        <activity android:name=".TOEIC.part_4.Part_4" />
+        <activity android:name=".Vocabulary.Learn_Voca.Examination_Voca" />
+        <activity android:name=".Vocabulary.Learn_Voca.Learn_Voca" />
+        <activity android:name=".TOEIC.part_5.Part_5" />
+        <activity android:name=".TOEIC.part_6.Part_6" />
+        <activity android:name=".Learn_Toeic.OverView.OverView_intro" />
+        <activity android:name=".Your_Words.Your_Words" />
+        <activity android:name=".Your_Words.KiemTra_TuVung.KiemTra_TuVung"></activity>
+    </application>
+
+</manifest>

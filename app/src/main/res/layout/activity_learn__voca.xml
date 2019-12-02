@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Vocabulary.Learn_Voca.Learn_Voca">
+    <ec.dina.btefonts.TextViewFonts
+        android:layout_margin="8dp"
+        android:text="Vocabulary"
+        app:dm_font="segoe_print"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+   <android.support.v4.view.ViewPager
+       android:id="@+id/viewpager_learn_voca"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </android.support.v4.view.ViewPager>
+</RelativeLayout>

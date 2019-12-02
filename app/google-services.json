@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1013681897069",
+    "firebase_url": "https://smart-english-5b37c.firebaseio.com",
+    "project_id": "smart-english-5b37c",
+    "storage_bucket": "smart-english-5b37c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013681897069:android:63644c6e42f6175e",
+        "android_client_info": {
+          "package_name": "teamkenko.english_smart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013681897069-54nj9r2n3p4sc448jg93vrv4a4c5d3q2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teamkenko.english_smart",
+            "certificate_hash": "777101ce21a95460393f0fbd54100627882dab0f"
+          }
+        },
+        {
+          "client_id": "1013681897069-5l1n9up5m7j1mhnagermqf5moo2liaqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2M2kb4R0oBNW2sT7s7aBAfB9y9GZzqh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013681897069-5l1n9up5m7j1mhnagermqf5moo2liaqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

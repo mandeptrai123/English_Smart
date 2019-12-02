@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    tools:context=".trangchu.onthi.Gra_dieukien">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:text="0/20"
+
+        android:id="@+id/score_dieukien">
+    </TextView>
+    >
+    <TextView
+        android:layout_toLeftOf="@id/score_dieukien"
+        android:background="@drawable/button8"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#6633cc"
+        android:textSize="25dp"
+        android:text="Câu 33"
+        android:textStyle="bold"
+        android:id="@+id/cau_dieukien"
+        android:gravity="center"/>
+
+    <TextView
+        android:background="@drawable/button9"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#6633cc"
+        android:textSize="24dp"
+        android:text=""
+        android:id="@+id/text_show_dieukien"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/cau_dieukien"
+        android:layout_marginLeft="2dp"
+        android:padding="4dp"> </TextView>
+
+
+    -<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutbutton_dieukien"
+    android:layout_below="@id/text_show_dieukien">
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:text="A"
+        android:id="@+id/button1_dieukien"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button2"
+        android:padding="3dp"> </Button>
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/button1_dieukien"
+        android:textSize="12dp"
+        android:text="B"
+        android:id="@+id/button2_dieukien"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button2"
+        android:padding="3dp"
+        > </Button>
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:text="C"
+        android:id="@+id/button3_dieukien"
+        android:textStyle="bold"
+        android:background="@drawable/button2"
+      android:layout_marginTop="7dp"
+        android:padding="3dp"
+       android:layout_below="@id/button2_dieukien"> </Button>
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:text="D"
+        android:id="@+id/button4_dieukien"
+        android:textStyle="bold"
+        android:background="@drawable/button2"
+        android:padding="3dp"
+       android:layout_marginTop="7dp"
+       android:layout_below="@id/button3_dieukien"> </Button>
+
+</RelativeLayout>
+
+    <TextView
+        android:background="@drawable/button9"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#6633cc"
+        android:textSize="18dp"
+        android:id="@+id/textgoiy_dieukien"
+        android:layout_below="@id/goiy_dieukien"> </TextView>
+    >
+    <TextView
+        android:id="@+id/goiy_dieukien"
+        android:layout_below="@id/icon_goiy_dieukien"
+        android:layout_height="30dp"
+        android:layout_width="70dp"
+        android:textColor="#996633"
+        android:textSize="20dp"
+        android:text="Gợi ý"
+       > </TextView>
+    <ImageView
+        android:background="@drawable/light_icon"
+        android:id="@+id/icon_goiy_dieukien"
+        android:layout_below="@id/layoutbutton_dieukien"
+        android:layout_width="50dp"
+        android:layout_height="65dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

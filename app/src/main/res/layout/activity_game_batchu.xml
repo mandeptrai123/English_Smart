@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_green"
+    tools:context=".trangchu.game_choose.Game_batchu">
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="big_Pixel"
+        android:text="Score : 2"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="#006633"
+        android:id="@+id/score_game1"/>
+    <ImageView
+        android:background="@drawable/sao_on"
+        android:layout_toRightOf="@id/score_game1"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:background="@drawable/button8"
+        android:layout_height="160dp"
+        android:layout_width="match_parent"
+        android:id="@+id/imagequestion"
+        android:layout_below="@id/score_game1"/>
+
+    <GridView
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/gridviewanswer"
+        android:layout_below="@id/imagequestion"
+        android:verticalSpacing="4dp"
+        android:padding="10dp"
+        android:columnWidth="40dp"
+        android:layout_centerHorizontal="true"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        android:numColumns="auto_fit" />
+
+    <GridView
+        android:layout_marginTop="4dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/gridviewbanphim"
+        android:layout_below="@id/gridviewanswer"
+        android:verticalSpacing="4dp"
+        android:padding="2dp"
+        android:columnWidth="40dp"
+        android:layout_centerHorizontal="true"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        android:numColumns="8"
+
+        />
+
+</RelativeLayout>

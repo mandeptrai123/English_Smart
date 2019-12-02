@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="Hello , I am Huynh Trong Man"
+        android:layout_toLeftOf="@id/item_sound_ex"
+        android:id="@+id/item_extend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/item_sound_ex"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+</RelativeLayout>

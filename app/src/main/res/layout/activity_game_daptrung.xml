@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".trangchu.game_choose.Game_lathinh">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ffffff"
+        android:layout_height="240dp"
+        android:layout_width="match_parent"
+        android:id="@+id/screen_choosen_daptrung"
+        android:layout_below="@id/text_score_daptrung"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:columnWidth="90dp"
+        android:numColumns="5">
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/button_start_daptrung"
+        android:background="@color/blue"
+        android:textSize="25dp"
+        android:text="Đoán Luôn !"
+        android:layout_below="@id/screen_choosen_daptrung"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ListView
+        android:id="@+id/list_answer_daptrung"
+        android:layout_margin="5dp"
+        android:layout_below="@id/button_start_daptrung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+<TextView
+    android:text="Wrong Answer !"
+    android:elevation="10dp"
+    android:gravity="center"
+    android:textStyle="italic"
+    android:textColor="#ffffff"
+    android:textSize="23dp"
+    android:visibility="invisible"
+    android:background="#FF0000"
+    android:id="@+id/noti_result"
+   android:layout_below="@id/text_score_daptrung"
+   android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+
+    <ec.dina.btefonts.TextViewFonts
+        android:layout_marginTop="5dp"
+        app:dm_font="segoe_print"
+        android:layout_centerHorizontal="true"
+        android:text="Score: 0"
+        android:background="@drawable/button9"
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:id="@+id/text_score_daptrung"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#6633cc">
+    </ec.dina.btefonts.TextViewFonts>
+
+
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_below="@id/noti_result"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:background="@drawable/bg_round_rect"
+            android:id="@+id/show_answer"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="add.json"
+            android:layout_margin="4dp"
+            android:id="@+id/add_note_daptrung"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

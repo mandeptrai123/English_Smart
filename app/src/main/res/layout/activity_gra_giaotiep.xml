@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    tools:context=".trangchu.onthi.Gra_giaotiep">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:text="0/50"
+        android:id="@+id/score_giaotiep">
+    </TextView>
+    >
+    <TextView
+        android:layout_toLeftOf="@id/score_giaotiep"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#6633cc"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="@drawable/button8"
+        android:text="Câu 1"
+        android:id="@+id/cau_giaotiep"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#6633cc"
+        android:textSize="24dp"
+        android:text=""
+        android:id="@+id/text_show_giaotiep"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/cau_giaotiep"
+        android:background="@drawable/button9"
+        android:layout_marginLeft="2dp"
+        android:padding="4dp">
+    </TextView>
+
+
+    -<RelativeLayout
+    android:layout_height="240dp"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutbutton_giaotiep"
+    android:layout_below="@+id/text_show_giaotiep"
+    android:layout_alignStart="@+id/text_show_giaotiep"
+    android:layout_alignLeft="@+id/text_show_giaotiep">
+
+    <Button
+        android:text="A"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="13dp"
+        android:id="@+id/button1_giaotiep"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button2"
+        android:padding="3dp" />
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="13dp"
+        android:text="B"
+        android:id="@+id/button2_giaotiep"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/button1_giaotiep"
+        android:background="@drawable/button2"
+        android:padding="3dp"
+
+/>
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="13dp"
+        android:text="C"
+        android:id="@+id/button3_giaotiep"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/button2_giaotiep"
+        android:background="@drawable/button2"
+        android:padding="3dp"
+       />
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textSize="13dp"
+        android:text="D"
+        android:id="@+id/button4_giaotiep"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/button3_giaotiep"
+        android:background="@drawable/button2"
+        android:padding="3dp"
+         />
+
+</RelativeLayout>
+
+    <TextView
+        android:background="@drawable/button9"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#6633cc"
+        android:textSize="18dp"
+        android:id="@+id/text_goiy_giaotiep"
+        android:layout_below="@id/goiy_giaotiep">
+    </TextView>
+    >
+    <ImageView
+        android:layout_below="@id/layoutbutton_giaotiep"
+        android:id="@+id/icon_goiy_giaotiep"
+        android:background="@drawable/light_icon"
+        android:layout_width="50dp"
+        android:layout_height="65dp" />
+    <TextView
+        android:layout_height="30dp"
+        android:layout_width="70dp"
+        android:textColor="#996633"
+        android:textSize="20dp"
+        android:text="Gợi ý"
+        android:id="@+id/goiy_giaotiep"
+        android:layout_below="@id/icon_goiy_giaotiep">
+    </TextView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

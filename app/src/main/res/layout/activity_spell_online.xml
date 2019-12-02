@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spell_online">
+    <RelativeLayout
+        android:id="@+id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/question_spell_contest"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Question: 1"
+            android:layout_width="150dp"
+            android:layout_height="60dp" />
+        <ProgressBar
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/question_spell_contest"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/img_spell_online"
+        android:layout_below="@id/title_relative"
+        android:text="Language"
+        android:background="@drawable/button_11"
+        android:gravity="center"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="#66cc00"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+    <RelativeLayout
+        android:orientation="horizontal"
+       android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/img_spell_online"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </RelativeLayout>
+</RelativeLayout>

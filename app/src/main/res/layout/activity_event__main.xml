@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Event.Event_Main">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/text_news"
+        app:lottie_fileName="as_news.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:text="text_news"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_below="@id/text_news"
+    android:id="@+id/list_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_like_rate"
+        app:lottie_fileName="like.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_love_rate"
+        app:lottie_fileName="icon_love.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_laugh_rate"
+        app:lottie_fileName="icon_laugh.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_wow_rate"
+        app:lottie_fileName="icon_wow.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/item_angry_rate"
+        app:lottie_fileName="as_angry.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/background"
+    tools:context=".trangchu.Trangchu">
+   <com.airbnb.lottie.LottieAnimationView
+       app:lottie_loop="true"
+       android:background="#ffffff"
+    android:id="@+id/poster_1"
+    android:layout_marginTop="@dimen/dimens_32dp"
+       app:lottie_autoPlay="true"
+       app:lottie_fileName="pos1.json"
+    android:layout_centerHorizontal="true"
+    android:layout_width="280dp"
+    android:layout_height="120dp" />
+   <com.airbnb.lottie.LottieAnimationView
+       android:background="#ffffff"
+       android:layout_below="@id/poster_1"
+       android:id="@+id/poster_2"
+       android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       android:layout_width="280dp"
+       android:layout_height="120dp" />
+   <com.airbnb.lottie.LottieAnimationView
+       android:background="#ffffff"
+       android:layout_marginBottom="40dp"
+       android:layout_below="@id/poster_2"
+       android:id="@+id/poster_3"
+       android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       android:layout_width="280dp"
+       android:layout_height="120dp" />
+
+
+</RelativeLayout>

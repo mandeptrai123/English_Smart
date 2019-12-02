@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+       android:id="@+id/image_custom"
+        android:layout_width="150dp"
+        android:layout_height="140dp" />
+    <TextView
+
+        android:padding="25dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="Listening"
+        android:layout_toRightOf="@id/image_custom"
+        android:id="@+id/text_custom"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <ImageView
+        android:background="@drawable/sao_on"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/image_custom"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sao_1" />
+
+    <ImageView
+        android:background="@drawable/sao_off"
+        android:id="@+id/sao_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/image_custom"
+        android:layout_toEndOf="@+id/sao_1"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:background="@drawable/sao_off"
+        android:id="@+id/sao_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/image_custom"
+        android:layout_toEndOf="@+id/sao_2"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

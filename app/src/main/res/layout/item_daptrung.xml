@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_egg"
+        app:lottie_fileName="egg.json"
+        android:layout_width="95dp"
+        android:layout_height="110dp" />
+
+
+    <ec.dina.btefonts.TextViewFonts
+      android:visibility="invisible"
+        app:dm_font="convincing"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:id="@+id/text_eggs"
+        android:layout_width="95dp"
+        android:layout_height="110dp" />
+
+</RelativeLayout>

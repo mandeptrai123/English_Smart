@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    tools:ignore="NamespaceTypo">
+    <android.support.v7.widget.CardView
+        android:layout_margin="8dp"
+        cardview:cardElevation="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <RelativeLayout
+            android:background="@drawable/bg_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loading_rank_item"
+                app:lottie_loop="true"
+                app:lottie_fileName="answer.json"
+                app:lottie_autoPlay="true"
+                app:lottie_colorFilter="@color/blue"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:elevation="15dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/img_rank"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                />
+
+            <ec.dina.btefonts.TextViewFonts
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:id="@+id/name_rank"
+                android:layout_toRightOf="@id/img_rank"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <ec.dina.btefonts.TextViewFonts
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Score: 300"
+                android:textSize="18dp"
+                android:id="@+id/score_rank"
+                android:layout_toRightOf="@id/nameschool_rank"
+                android:layout_margin="5dp"
+                android:layout_width="130dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="25dp" />
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/medal_rank"
+                android:layout_width="100dp"
+                android:layout_height="25dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginBottom="7dp"
+                android:id="@+id/nameschool_rank"
+                android:layout_width="40dp"
+                android:layout_toRightOf="@id/img_rank"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+
+

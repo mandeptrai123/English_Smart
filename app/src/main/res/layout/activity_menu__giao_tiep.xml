@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trangchu.GiaoTiep.Menu_GiaoTiep">
+
+    <TextView
+        android:id="@+id/watch_video"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="Tech Talk"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+<com.tbuonomo.creativeviewpager.CreativeViewPager
+    app:contentHorizontalPadding="10dp"
+    android:id="@+id/creative_name"
+    android:layout_below="@id/watch_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</com.tbuonomo.creativeviewpager.CreativeViewPager>
+
+</RelativeLayout>

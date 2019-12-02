@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Login.Register_Main">
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/white"
+        android:id="@+id/progressbar_register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo_kenko"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_below="@id/progressbar_register"
+        android:text="Sign Up"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <EditText
+        android:padding="9dp"
+        android:background="@drawable/bg_edit"
+        android:hint="gmail"
+        android:layout_below="@id/sign_up"
+        android:layout_margin="4dp"
+        android:id="@+id/edit_register_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <EditText
+        android:padding="9dp"
+        android:background="@drawable/bg_edit"
+        android:hint="password"
+        android:layout_below="@id/edit_register_user"
+        android:id="@+id/edit_register_pass"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <EditText
+        android:padding="9dp"
+        android:background="@drawable/bg_edit"
+        android:hint="confirm password"
+        android:layout_below="@id/edit_register_pass"
+        android:id="@+id/edit_register_pass_verify"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:onClick="sign_up_register"
+        android:background="@drawable/bg_round_rect"
+        android:textColor="#ffffff"
+        android:id="@+id/but_register_main"
+        android:text="Register"
+        android:layout_margin="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_register_pass_verify"
+        android:layout_width="140dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:onClick="button_to_login"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:text="If you have Account, Login"
+        android:layout_below="@id/but_register_main"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</RelativeLayout>
+
+

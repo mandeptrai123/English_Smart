@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:background="@color/background"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="4dp"
+    android:id="@+id/edit_profile"
+    android:textSize="24dp"
+    android:textColor="#000000"
+    android:text="Edit Profile"
+    android:gravity="center"
+    android:layout_width="240dp"
+    android:layout_height="60dp" />
+    <TextView
+        android:background="@color/background"
+        android:id="@+id/edit_sound"
+        android:text="Tắt Âm"
+        android:layout_below="@id/edit_profile"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:background="@color/background"
+        android:id="@+id/sign_out_op"
+        android:text="Sign Out"
+        android:layout_below="@id/edit_sound"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="60dp" />
+</RelativeLayout>

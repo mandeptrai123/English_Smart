@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trangchu.User">
+    <RelativeLayout
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_round_rect"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/poster_dauchu"
+            android:layout_margin="3dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lichsudau_tit"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+          <TextView
+              android:text="Lịch Sử Đấu"
+              android:textColor="#000000"
+              android:textSize="21dp"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="40dp" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
+
+    <Button
+        android:textColor="#000000"
+        android:id="@+id/button_td"
+
+        android:text="Tìm Trận"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
+</LinearLayout>

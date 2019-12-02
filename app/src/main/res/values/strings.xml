@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">English_Smart</string>
+    <string name="choose_2">English_Smart</string>
+    <string name="yourself">English_Smart</string>
+    <string name="seewords">English_Smart</string>
+    <string name="test">English_Smart</string>
+    <string name="Open">Open </string>
+    <string name="Close">Close </string>
+    <string name="facebook_app_id">515317609240210</string> <string name="fb_login_protocol_scheme">fb515317609240210</string>
+
+</resources>

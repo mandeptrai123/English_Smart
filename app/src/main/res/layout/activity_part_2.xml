@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".TOEIC.part_2.Part_2">
+    <RelativeLayout
+        android:id="@+id/head_part_2"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="00 00 00"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/time_part2"
+            android:layout_centerVertical="true"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title_part2"
+            android:textSize="19dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time_part2"
+            android:text="Question Response"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/head_part_2"
+        android:id="@+id/pos_ques_p2"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="Question :100"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <SeekBar
+        android:progressDrawable="@drawable/seek_progress_2"
+        android:thumb="@drawable/seekbar_drawable_thumb"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_round_rect"
+        android:layout_below="@id/pos_ques_p2"
+        android:id="@+id/seek_part2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+<android.support.v4.view.ViewPager
+    android:layout_below="@id/seek_part2"
+    android:layout_above="@id/bot_part2"
+    android:id="@+id/viewpager_part2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:id="@+id/bot_part2"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/but_option_p2"
+            android:textColor="#ffffff"
+            android:text="Option"
+            android:background="@drawable/bg_round_rect"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/but_submit_p2"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_round_rect"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:text="Start"
+            android:background="@drawable/bg_round_rect"
+            android:textColor="#ffffff"
+            android:id="@+id/but_start_p2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            app:lottie_loop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/lot_sound_p2"
+            app:lottie_fileName="as_sound.json"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</RelativeLayout>

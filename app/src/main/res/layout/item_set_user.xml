@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#4b405c"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/armorial_1"
+        android:id="@+id/set_img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <ProgressBar
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/white"
+        android:id="@+id/loading_nguoichoi_1"
+        android:layout_below="@id/armorial_1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="aleida"
+        android:layout_margin="10dp"
+        android:layout_below="@id/set_img_1"
+        android:id="@+id/set_name_1"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Trẻ Trâu Ok"
+        android:textColor="#FF6600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="convincing"
+        android:id="@+id/title_kenko"
+        android:layout_below="@id/set_name_1"
+        android:text="Thách đố Chữ"
+        android:gravity="center"
+        android:textColor="#339999"
+        android:textSize="25dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/set_img_2"
+        android:layout_below="@id/set_name_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <ProgressBar
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/white"
+        android:id="@+id/loading_nguoichoi_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/set_name_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"  />
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="arial_rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/armorial_1"
+        android:textColor="#9933CC"
+        android:text="Master"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="arial_rounded"
+        android:id="@+id/armorial_2"
+        android:textSize="25dp"
+        android:text="Legendary"
+        android:layout_below="@id/set_img_2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#CC0000"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ec.dina.btefonts.TextViewFonts
+        app:dm_font="aleida"
+        android:layout_margin="3dp"
+        android:id="@+id/set_name_2"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Mẫn Đẹp Trai"
+        android:textColor="#FF6600"
+        android:layout_below="@id/title_kenko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

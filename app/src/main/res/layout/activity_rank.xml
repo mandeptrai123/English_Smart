@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".trangchu.ThanhTich.Rank">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/title_rank"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        cardview:cardBackgroundColor="#ffffff"
+        cardview:cardCornerRadius="20dp">
+
+        <ec.dina.btefonts.TextViewFonts
+            android:id="@+id/rank_consider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#0066FF"
+            android:textSize="16dp"
+            android:textStyle="italic|bold"
+            app:dm_font="convincing" />
+
+    </android.support.v7.widget.CardView>
+<com.airbnb.lottie.LottieAnimationView
+    app:lottie_autoPlay="true"
+    app:lottie_fileName="rank.json"
+    android:id="@+id/icon_rank_demo"
+    android:layout_width="100dp"
+    android:layout_height="80dp" />
+    <ec.dina.btefonts.TextViewFonts
+        android:layout_toRightOf="@id/icon_rank_demo"
+        android:gravity="center"
+        app:dm_font="convincing"
+        android:textSize="25dp"
+        android:text="Top 10 English-E"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+    <ListView
+        android:layout_below="@id/icon_rank_demo"
+        android:layout_marginTop="5dp"
+      android:layout_above="@id/title_rank"
+        android:id="@+id/list_rank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</RelativeLayout>

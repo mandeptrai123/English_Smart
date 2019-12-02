@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    tools:context=".Listening_Contest.Listen_Online">
+    <RelativeLayout
+        android:id="@+id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:background="@drawable/button9"
+            android:id="@+id/question_listen_contest"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#0066ff"
+            android:textStyle="bold"
+            android:text="Question: 1"
+            android:layout_width="150dp"
+            android:layout_height="60dp" />
+        <SeekBar
+            android:id="@+id/seek_bar_listen"
+            android:layout_below="@id/question_listen_contest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_listen_contest"
+        android:background="@drawable/img_listen_ava"
+        android:layout_margin="15dp"
+        android:layout_below="@id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <ec.dina.btefonts.TextViewFonts
+       app:dm_font="segoe_print"
+        android:background="@drawable/button8"
+        android:onClick="tap_to_start"
+        android:id="@+id/pressssss"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#FF3333"
+        android:text="Tab To Listen Again !"
+        android:layout_below="@id/img_listen_contest"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <RelativeLayout
+        android:layout_below="@id/pressssss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:numColumns="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridLayout>
+        <TextView
+            android:onClick="a_listen_contest"
+            android:id="@+id/answer_a_listen_contest"
+            android:textColor="#0066ff"
+            android:background="@drawable/button_11"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+             android:layout_margin="5dp"
+            android:layout_width="140dp"
+            android:layout_height="80dp">
+        </TextView>
+        <TextView
+            android:onClick="b_listen_contest"
+            android:id="@+id/answer_b_listen_contest"
+          android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:textColor="#0066ff"
+            android:gravity="center"
+            android:background="@drawable/button_11"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_width="140dp"
+            android:layout_height="80dp">
+        </TextView>
+        <TextView
+            android:onClick="c_listen_contest"
+            android:id="@+id/answer_c_listen_contest"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_width="140dp"
+            android:background="@drawable/button_11"
+            android:textColor="#0066ff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_height="80dp">
+        </TextView>
+
+        <TextView
+            android:onClick="d_listen_contest"
+            android:id="@+id/answer_d_listen_contest"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#0066ff"
+            android:background="@drawable/button_11"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:layout_width="140dp"
+            android:layout_height="80dp">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

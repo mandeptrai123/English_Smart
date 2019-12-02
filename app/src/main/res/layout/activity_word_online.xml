@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Word_Contest.Word_online">
+    <RelativeLayout
+        android:id="@+id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ec.dina.btefonts.TextViewFonts
+            app:dm_font="april_flowers"
+            android:layout_margin="5dp"
+            android:id="@+id/question_word_contest"
+            android:background="@drawable/button9"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FF9900"
+            android:textStyle="bold"
+            android:text="Question: 1"
+            android:layout_width="150dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+    <ec.dina.btefonts.TextViewFonts
+        android:background="@drawable/button_11"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Language"
+        app:dm_font="one"
+        android:id="@+id/img_word_contest"
+        android:layout_margin="15dp"
+        android:layout_below="@id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_fileName="boom.json"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/time_words"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/img_word_contest"
+     />
+    <ec.dina.btefonts.TextViewFonts
+        android:id="@+id/score_word_online"
+        android:gravity="center"
+        android:textColor="#663300"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Score: "
+        app:dm_font="sans_bold"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/time_words"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <GridLayout
+            android:numColumns="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridLayout>
+        <TextView
+            android:onClick="c1_word_online"
+            android:id="@+id/c1_word_online"
+            android:textColor="#FF9900"
+            android:background="@drawable/button_11"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:layout_width="140dp"
+            android:layout_height="80dp">
+        </TextView>
+        <TextView
+            android:onClick="c2_word_online"
+            android:id="@+id/c2_word_online"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:textColor="#FF9900"
+            android:gravity="center"
+            android:background="@drawable/button_11"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_width="140dp"
+            android:layout_height="80dp">
+        </TextView>
+        <TextView
+            android:onClick="c3_word_online"
+            android:id="@+id/c3_word_online"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_width="140dp"
+            android:background="@drawable/button_11"
+            android:textColor="#FF9900"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_height="80dp">
+        </TextView>
+
+        <TextView
+            android:onClick="c4_word_online"
+            android:id="@+id/c4_word_online"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#FF9900"
+            android:background="@drawable/button_11"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:layout_width="140dp"
+            android:layout_height="80dp">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>
